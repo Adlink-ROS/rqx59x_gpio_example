@@ -3,6 +3,11 @@ The repo would show how to use gpio (General Purpose Input Output) in command an
 
 For now, the example code was written in python.
 
+# Outline
+- [Check GPIO status]
+- [Use the command to control gpio]
+- [Run the code to controll gpio]
+
 # Check GPIO status
 You could check the status of GPIO in the following command.
 ```
