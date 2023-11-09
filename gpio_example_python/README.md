@@ -24,7 +24,7 @@ You can see the chip name and the gpio name in the result. "out lo" means the gp
 
 
 # Correspondence table (sysfs gpio & DB-50 gpio name)
-The "gpio284/base_gpio0"  corresponds to GPIO 0 of the DB-50 controller located in Pin no.5.
+The "gpio284/base_gpio0"  corresponds to GPIO 0 of the DB-50 connector located in Pin no.5.
 
 <img src="https://github.com/Jason-Lee0/controller_example/assets/56862464/8085cd8b-1117-48a7-bfa0-e0c604eb35ad" height="400" width="400">
 
