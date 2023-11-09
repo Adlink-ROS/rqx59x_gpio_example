@@ -1,15 +1,15 @@
 # GPIO controll example for RQX-59 series
 
 RQX-59 series are embedded robotic controller powered by NVIDIA® Jetson AGX Orin ™ Module.
-![computer.png](https://hackmd.io/_uploads/S1AMVAYXT.png)
+
+<img src="https://github.com/Jason-Lee0/controller_example/assets/56862464/40ff2e3c-6e1e-473c-aa6c-a81547dec9e2" height="100" width="200">
 
 The platform provides multi-I/O DB-50 Connector comprehensive I/O for autonomous robotics via a DB-50 connector on the right side of the chassis.
 
 # DB-50 connector pin table
 
-![DB50 intro.PNG](https://hackmd.io/_uploads/S1tVuRYma.png)
-![pin difination.PNG](https://hackmd.io/_uploads/BJFau0Fmp.png)
 
+<img src="https://github.com/Jason-Lee0/controller_example/assets/56862464/0ffa6ff3-b554-4376-a75e-b43f8968f743" height="600" width="400">
 
 
 
@@ -77,6 +77,7 @@ sudo python3 gpio.py
 You can check out the function explaination in the code.
 
 - Result
+  
 ![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/2a2a1238-767b-4761-9fde-d22a3a9936cf)
 
 
