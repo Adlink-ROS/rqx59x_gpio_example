@@ -1,7 +1,11 @@
-# Controller_example
-This repo helps you to checkout the functional of GPIO and CANBUS in your platform.
+# Controller_example for RQX-59 series
+RQX-59 series are embedded robotic controller powered by NVIDIA® Jetson AGX Orin ™ Module.
 
-It contains two part: gpio_example and can_example.The packages show how to install related library, check functional with command, and write the simple code to test.
+<img src="https://user-images.githubusercontent.com/56862464/281652704-40ff2e3c-6e1e-473c-aa6c-a81547dec9e2.png">
+
+The repo shows how to controll the CANBUS and gpio with multi-I/O DB-50 Connector.
+
+
 
 # Readme Link
 - [gpio_example](https://github.com/Jason-Lee0/controller_example/tree/main/gpio_example_python)
