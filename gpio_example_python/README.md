@@ -23,6 +23,12 @@ sudo cat /sys/kernel/debug/gpio
 
 You can see the chip name and the gpio name in the result. "out lo" means the gpio is on low status.
 
+
+# Correspondence table (sysfs gpio & DB-50 gpio name)
+The "gpio284/base_gpio0"  corresponds to the GPIO 0 of the DB-50 controller located in Pin no.5.
+
+<img src="https://github.com/Jason-Lee0/controller_example/assets/56862464/8085cd8b-1117-48a7-bfa0-e0c604eb35ad" height="400" width="400">
+
 # Controll gpio with command
 1. Open the bash terminal and set to root.
 ```
