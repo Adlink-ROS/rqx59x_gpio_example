@@ -27,6 +27,8 @@ io.request(config)
 
 
 print("initial value : {}\n".format(io.get_value()))
+
+# get_value()- get current gpio value
 last_state = io.get_value()
 
 try:
@@ -34,6 +36,8 @@ try:
     while True:
         new_state = 1 - last_state
         print("changing state: {} -> {}".format(last_state,new_state))
+        
+        # set_value()- set value to gpio
         io.set_value(new_state)
         time.sleep(1)
         
