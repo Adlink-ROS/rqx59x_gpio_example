@@ -1,93 +1,90 @@
-# GPIO example
-The repo will show how to use gpio (General Purpose Input Output) in command and code.
+# GPIO controll example for RQX-59 series
 
-For now, the example code is written in python.
+RQX-59 series are embedded robotic controller powered by NVIDIA® Jetson AGX Orin ™ Module.
+![computer.png](https://hackmd.io/_uploads/S1AMVAYXT.png)
 
-# Outline
-- [Check GPIO status](https://github.com/Jason-Lee0/controller_example/blob/main/gpio_example_python/README.md#check-gpio-status
-)
-- [Use the command to control gpio](https://github.com/Jason-Lee0/controller_example/blob/main/gpio_example_python/README.md#use-the-command-to-control-gpio)
-- [Run the code to controll gpio](https://github.com/Jason-Lee0/controller_example/blob/main/gpio_example_python/README.md#run-the-code-to-controll-gpio)
+The platform provides multi-I/O DB-50 Connector comprehensive I/O for autonomous robotics via a DB-50 connector on the right side of the chassis.
+
+# DB-50 connector pin table
+
+![DB50 intro.PNG](https://hackmd.io/_uploads/S1tVuRYma.png)
+![pin difination.PNG](https://hackmd.io/_uploads/BJFau0Fmp.png)
+
+
+
 
 # Check GPIO status
-You can check the status of GPIO in the following command.
+You could check the status of GPIO in the following command.
 ```
 sudo cat /sys/kernel/debug/gpio
 ```
+![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/a8f0ca3f-1dad-456c-8aff-2143ccd9ab13)
 
-The result contains the chip name which connected with your device and the io number in the chip. When the gpio status shows "out lo", it means the io was getting on low status. 
 
-In the following tutorial, you will learn how to use the command to make the specific io stay on high status or not.
+You can see the chip name and the gpio name in the result. "out lo" means the gpio is on low status.
 
-# Use the command to control gpio
-It needs the authenticator to do this tutorial.
+# Controll gpio with command
+1. Open the bash terminal and set to root.
 ```
 sudo su
 ```
-Then you can use the terminal command to controll.
-
-First, choose the gpio you want to controll and export it in sys gpio class. 
-(Here I use gpio285 for example.) 
-
-(Notice: If you use the gpio number which is not in the gpio table, it will show the warning log called write error: Invalid argument )
+2. Initialize the GPIO you want to use (for example: GPIO285).
 
 ```
 echo 285 > /sys/class/gpio/export
-```
-
-Second, change the direction and value.
-(Notice : The <gpio*> path depends on the gpio number you called.)
-
-```
 echo out > /sys/class/gpio/gpio285/direction
+```
+3. Controll the gpio
+```
+#set gpio285 to high
 echo 1 > /sys/class/gpio/gpio285/value
 ```
 
-If it didn't show any error, then you could check the gpio status.
+![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/0be53e01-2d30-42e8-ac2f-31cf95f9160e)
+
+
+4. Check the current status of gpio285.
 
 ```
 sudo cat /sys/kernel/debug/gpio
 ```
-In the result, the status of gpio285 show "out hi". It means the gpio is on high status. (value:1)
+![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/8a1d7a88-5f80-440c-bc9d-76e597e92797)
 
-```
- gpio-285 (base_gpio1          |sysfs               ) out hi 
-```
 
-You can also unexport the gpio if you want to release the controll of system.
+5. Release the system controll of gpio285
 ```
 echo 285 > /sys/class/gpio/unexport
 ```
 
-Next section, We will use code to controll the gpio.
 
-# Run the code to controll gpio
-To run properly,it needs to install the related package.
+
+# Controll gpio with code
+
+1. Install the related package
 (gpiod - https://pypi.org/project/gpiod/)
 
 ```
 sudo pip install gpiod
 ```
-After installing it, the repo provides the example code (./gpio.py) to run the specific gpio.
-You can clone this "controll_example" package or just copy the python file to your another file.
+2. Run the example code. (For example: Controll gpio285 on/off)
 
 ```
-#clone
 git clone https://github.com/Jason-Lee0/controller_example
 cd controller_example/gpio_example
 sudo python3 gpio.py
 ```
-Then,you will see the result below. You can also use the check command to check the gpio status.
-```
-initial value : 0
 
-change state 0 -> 1
-current value : 1
-change state 1 -> 0
-current value : 0
-....
-```
-In the code, I controll the 1st gpio of gpiochip3. You can change the defined gpio.  The detail explaination is in the code.
+You can check out the function explaination in the code.
+
+- Result
+![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/2a2a1238-767b-4761-9fde-d22a3a9936cf)
+
+
+
+ 
+
+
+
 
 
 
