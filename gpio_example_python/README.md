@@ -14,7 +14,7 @@ The platform provides multi-I/O DB-50 Connector comprehensive I/O for autonomous
 
 
 # Check GPIO status
-You could check the status of GPIO in the following command.
+You can check the status of GPIO with the following command.
 ```
 sudo cat /sys/kernel/debug/gpio
 ```
