@@ -18,14 +18,13 @@ You can check the status of GPIO with the following command.
 ```
 sudo cat /sys/kernel/debug/gpio
 ```
-![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/a8f0ca3f-1dad-456c-8aff-2143ccd9ab13)
-
+![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/9d999e57-3bba-4876-b642-db78a6143294)
 
 You can see the chip name and the gpio name in the result. "out lo" means the gpio is on low status.
 
 
 # Correspondence table (sysfs gpio & DB-50 gpio name)
-The "gpio284/base_gpio0"  corresponds to the GPIO 0 of the DB-50 controller located in Pin no.5.
+The "gpio284/base_gpio0"  corresponds to GPIO 0 of the DB-50 controller located in Pin no.5.
 
 <img src="https://github.com/Jason-Lee0/controller_example/assets/56862464/8085cd8b-1117-48a7-bfa0-e0c604eb35ad" height="400" width="400">
 
