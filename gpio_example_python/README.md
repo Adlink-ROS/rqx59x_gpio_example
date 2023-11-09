@@ -2,7 +2,7 @@
 
 RQX-59 series are embedded robotic controller powered by NVIDIA® Jetson AGX Orin ™ Module.
 
-<img src="https://github.com/Jason-Lee0/controller_example/assets/56862464/40ff2e3c-6e1e-473c-aa6c-a81547dec9e2" height="100" width="200">
+<img src="https://github.com/Jason-Lee0/controller_example/assets/56862464/40ff2e3c-6e1e-473c-aa6c-a81547dec9e2" height="200" width="300">
 
 The platform provides multi-I/O DB-50 Connector comprehensive I/O for autonomous robotics via a DB-50 connector on the right side of the chassis.
 
