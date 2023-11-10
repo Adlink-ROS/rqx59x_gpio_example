@@ -9,4 +9,4 @@ The repo shows how to controll the CANBUS and gpio with multi-I/O DB-50 Connecto
 
 # Package Link
 - [gpio_example](https://github.com/Jason-Lee0/controller_example/tree/main/gpio_example_python)
-- Can_example
+- [Can_example] (https://github.com/Jason-Lee0/controller_example/tree/main/canbus_example_python)
