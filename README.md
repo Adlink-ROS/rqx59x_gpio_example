@@ -3,7 +3,7 @@ RQX-59 series are embedded robotic controller powered by NVIDIA® Jetson AGX Ori
 
 <img src="https://user-images.githubusercontent.com/56862464/281652704-40ff2e3c-6e1e-473c-aa6c-a81547dec9e2.png">
 
-The repo shows how to controll the CANBUS and gpio with multi-I/O DB-50 Connector.
+The repo shows how to control the CANBUS and gpio with multi-I/O DB-50 Connector.
 
 
 
