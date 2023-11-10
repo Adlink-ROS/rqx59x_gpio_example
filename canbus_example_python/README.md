@@ -93,7 +93,7 @@ If you want to learn more details, you can refer to the above reference link.
 (can_tool - https://pypi.org/project/cantools/)
 
 ```
-sudo pip install can-tools
+pip install can-tools
 ```
 
 2. Start the receive script (can_recv.py) in terminal 1 :
