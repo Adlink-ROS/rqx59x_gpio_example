@@ -101,8 +101,8 @@ pip install can-tools
 The receive script shows how to load the dbc file and receive the message from can_interface.  
 
 ```
-git clone https://github.com/Jason-Lee0/controller_example
-cd controller_example/canbus_example_python
+git clone https://github.com/Adlink-ROS/rqx59x_gpio_example
+cd rqx59x_gpio_example/canbus_example_python
 python3 can_recv.py
 ```
 
