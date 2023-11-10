@@ -74,8 +74,8 @@ sudo pip install gpiod
 2. Run the example code. (For example: Controll gpio285 on/off)
 
 ```
-git clone https://github.com/Jason-Lee0/controller_example
-cd controller_example/gpio_example
+git clone https://github.com/Adlink-ROS/rqx59x_gpio_example
+cd rqx59x_gpio_example/gpio_example
 sudo python3 gpio.py
 ```
 
