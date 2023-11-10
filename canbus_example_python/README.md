@@ -65,8 +65,8 @@ sudo apt-get install can-utils
 2. If you didn't connect any devices, you can connect can0 & can1 with cables for test. 
 ( can0-H <-> can1-H ,  can0-L <-> can1-L )
 
-![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/f75de317-f13f-4cab-9dbe-b94e30976f87)
 
+<img src="https://github.com/Jason-Lee0/controller_example/assets/56862464/f75de317-f13f-4cab-9dbe-b94e30976f87" height="200" width ="400">
 
 
 3. Use candump  to print all data that is being received by a CAN interface.
