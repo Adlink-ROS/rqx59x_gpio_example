@@ -45,7 +45,7 @@ ip -detail link show can0
 ```
 ![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/ce35ca6d-8866-4485-bc45-7e607156f512)
 
-ERROR-ACTIVE is the normal state. If occur error, it will show ERROR-PASSIVE.
+ERROR-ACTIVE is the normal state. If occur error, it will show ERROR-PASSIVE/ BUS-OFF .
 
 - Use "dmesg" to check the setup info of can device.
 ```
@@ -65,6 +65,7 @@ sudo apt-get install can-utils
 2. If you didn't connect any devices, you can connect can0 & can1 with cables for test. 
 ( can0-H <-> can1-H ,  can0-L <-> can1-L )
 
+![image](https://github.com/Jason-Lee0/controller_example/assets/56862464/f75de317-f13f-4cab-9dbe-b94e30976f87)
 
 
 
@@ -96,6 +97,7 @@ sudo pip install can-tools
 ```
 
 2. Start the receive script (can_recv.py) in terminal 1 :
+
 The receive script shows how to load the dbc file and receive the message from can_interface.  
 
 ```
@@ -104,7 +106,8 @@ cd controller_example/canbus_example_python
 python3 can_recv.py
 ```
 
-3. Open a second terminal and start the send script (can_send.py) 
+3. Open a second terminal and start the send script (can_send.py):
+   
 The send script shows how to load the dbc file and send the message to can_interface.
 
 ```
